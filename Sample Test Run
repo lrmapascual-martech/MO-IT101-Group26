@@ -1,0 +1,83 @@
+cd C:\Users\Admin\OneDrive\Documents\NetBeansProjects\MotorPH; "JAVA_HOME=C:\\Program Files\\Apache NetBeans\\jdk" cmd /c "\"C:\\Program Files\\Apache NetBeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" -Dexec.appArgs= -Dexec.mainClass=com.mycompany.motorph.MotorPH \"-Dexec.executable=C:\\Program Files\\Apache NetBeans\\jdk\\bin\\java.exe\" \"-Dmaven.ext.class.path=C:\\Program Files\\Apache NetBeans\\java\\maven-nblib\\netbeans-eventspy.jar\" --no-transfer-progress process-classes org.codehaus.mojo:exec-maven-plugin:3.5.1:exec"
+Scanning for projects...
+
+-----------------------< com.mycompany:MotorPH >------------------------
+Building MotorPH 1.0-SNAPSHOT
+  from pom.xml
+--------------------------------[ jar ]---------------------------------
+
+--- resources:3.3.1:resources (default-resources) @ MotorPH ---
+skip non existing resourceDirectory C:\Users\Admin\OneDrive\Documents\NetBeansProjects\MotorPH\src\main\resources
+
+--- compiler:3.13.0:compile (default-compile) @ MotorPH ---
+Nothing to compile - all classes are up to date.
+
+--- exec:3.5.1:exec (default-cli) @ MotorPH ---
+===== MOTORPH PAYROLL SYSTEM =====
+
+Enter Employee Complete Name: Manual Garcia
+Enter Employee Number: 10001
+Enter Hourly Rate: 200
+Enter Payroll Cutoff (15 or 30): 5
+Enter number of days worked this cutoff: 5
+
+Day 1
+
+======= WORK HOURS CALCULATION =======
+Enter Time In (example: 8.0): 8.59
+Enter Time Out (example: 17.0): 18.31
+Enter Break Time (hours): 1
+Total Hours Worked: 8.719999999999999
+
+Day 2
+
+======= WORK HOURS CALCULATION =======
+Enter Time In (example: 8.0): 9.47
+Enter Time Out (example: 17.0): 19.07
+Enter Break Time (hours): 1
+Total Hours Worked: 8.6
+
+Day 3
+
+======= WORK HOURS CALCULATION =======
+Enter Time In (example: 8.0): 10.57
+Enter Time Out (example: 17.0): 21.32
+Enter Break Time (hours): 1
+Total Hours Worked: 9.75
+
+Day 4
+
+======= WORK HOURS CALCULATION =======
+Enter Time In (example: 8.0): 9.32
+Enter Time Out (example: 17.0): 19.15
+Enter Break Time (hours): 1
+Total Hours Worked: 8.829999999999998
+
+Day 5
+
+======= WORK HOURS CALCULATION =======
+Enter Time In (example: 8.0): 9.46
+Enter Time Out (example: 17.0): 19.15
+Enter Break Time (hours): 1
+Total Hours Worked: 8.689999999999998
+
+===== PAYROLL SUMMARY =====
+Employee Complete Name : Manual Garcia
+Employee Number : 10001
+Cutoff Date   : 5
+Total Hours   : 44.589999999999996
+Gross Salary  : 8918.0
+--------------------------------
+SSS           : 356.72
+PhilHealth    : 178.36
+PagIBIG       : 89.18
+Income Tax    : 891.8000000000001
+--------------------------------
+Total Deduct. : 1516.06
+Net Pay       : 7401.9400000000005
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  07:56 min
+Finished at: 2026-03-09T23:53:24+08:00
+------------------------------------------------------------------------
